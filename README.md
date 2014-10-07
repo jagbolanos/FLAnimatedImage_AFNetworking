@@ -7,7 +7,8 @@ You need those libraries in your project.
 
 If you use a FLAnimatedImageView then just do this:
 
-    [animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage success:^(NSURLRequest *request, NSHTTPURLResponse *response, FLAnimatedImage *animatedImage){
+    [animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage 
+                    success:^(NSURLRequest *request, NSHTTPURLResponse *response, FLAnimatedImage *animatedImage){
                         animatedImageView.animatedImage = animatedImage;
     					//do more things
                     } failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error){
