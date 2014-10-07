@@ -7,7 +7,8 @@ You need those libraries in your project.
 
 If you use a FLAnimatedImageView then just do this:
 
-    [animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage 
+    [animatedImageView setAnimatedImageWithURLRequest:request 
+                    placeholderImage:placeHolderImage 
                     success:^(NSURLRequest *request, NSHTTPURLResponse *response, FLAnimatedImage *animatedImage){
                         animatedImageView.animatedImage = animatedImage;
     					//do more things
@@ -17,7 +18,8 @@ If you use a FLAnimatedImageView then just do this:
 
 or
 
-    [animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage 
+    [animatedImageView setAnimatedImageWithURLRequest:request 
+                placeholderImage:placeHolderImage 
                 success:nil
                 failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error){
                     //handle failure
