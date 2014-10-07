@@ -17,7 +17,7 @@ If you use a FLAnimatedImageView then just do this:
 
 or
 
-[animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage 
+    [animatedImageView setAnimatedImageWithURLRequest:request placeholderImage:placeHolderImage 
                 success:nil
                 failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error){
                     //handle failure
