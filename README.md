@@ -24,3 +24,5 @@ or
                 failure:^(NSURLRequest *request, NSHTTPURLResponse *response, NSError *error){
                     //handle failure
                 }];
+
+Feel free to reach me @jagbolanos
