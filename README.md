@@ -25,4 +25,4 @@ or
                     //handle failure
                 }];
 
-Feel free to reach me @jagbolanos
+Feel free to reach me [@jagbolanos](https://twitter.com/jagbolanos)
