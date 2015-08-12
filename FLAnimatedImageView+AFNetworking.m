@@ -68,10 +68,12 @@
                 if (operation == strongSelf.af_imageRequestOperation){
                     strongSelf.af_imageRequestOperation = nil;
                 }
+                
+                [[[strongSelf class] sharedAnimatedImageCache] cacheAnimatedImage:responseImage
+                                                               forRequest:urlRequest];
             }
             
-            [[[strongSelf class] sharedAnimatedImageCache] cacheImage:responseObject
-                                                           forRequest:urlRequest];
+            
             
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
